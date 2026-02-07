@@ -1,0 +1,114 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+body { 
+    background: #121212; 
+    color: #fff; 
+    scroll-behavior: smooth; 
+}
+
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 10%; 
+    background: rgba(0,0,0,0.8); 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+.logo span { 
+    color: #00feba; 
+}
+nav ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 20px; 
+}
+nav a { 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 18px; 
+}
+
+.hero { 
+    height: 90vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1350&q=80'); 
+    background-size: cover; 
+}
+.highlight { 
+    color: #00feba; 
+}
+.hero h1 { 
+    font-size: 60px; 
+    margin-bottom: 10px; 
+}
+.btn { 
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 12px 30px; 
+    background: #00feba; 
+    color: #000; 
+    border-radius: 30px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+#projects { 
+    padding: 80px 10%; 
+}
+.section-title { 
+    text-align: center; 
+    margin-bottom: 40px; 
+    font-size: 35px; 
+}
+.project-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+.project-card { 
+    background: #1e1e1e; 
+    padding: 30px; 
+    border-radius: 15px; 
+    border: 1px solid #333; 
+    transition: 0.3s; 
+}
+.project-card:hover { 
+    transform: translateY(-10px); 
+    border-color: #00feba; 
+}
+.project-link { 
+    color: #00feba; 
+    text-decoration: none; 
+    display: inline-block; 
+    margin-top: 15px; 
+}
+.tag { 
+    font-size: 12px; 
+    background: #333; 
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    color: #aaa; 
+}
+
+footer { 
+    text-align: center; 
+    padding: 40px; 
+    background: #0a0a0a; 
+}
+.social-links a { 
+    margin: 0 15px; 
+    color: #00feba; 
+    text-decoration: none; 
+}
